@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js A simple Demo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="fullpage">
+	<div class="section active" id="section0">
+		<div class="container">
+		    <div class="row align-items-center">
+		      <div class="col-12 col-md-6 mb-4 mb-md-0">
+						<div class="top_guy_image">
+			        <img alt="image"  src="./images/guy.png">
+						</div>
+		      </div>
+		      <div class="col-12 col-md-6 col-lg-5 ml-md-auto text-left title_guy">
+		        <h1 class="name">Andre</h1>
+						<h1 class="last_name">Peregrina</h1>
+		        <p class="job"> - Product manager.</p>
+		        <a class="btn btn-primary btn-round mt-4" href="https://www.froala.com">Download</a>
+		      </div>
+		    </div>
+		  </div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide "><h1>Simple Demo</h1></div>
+	    <div class="slide active"><h1>Only text</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
+	</div>
+	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+</div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['#FFFFF', '#3f2caa', '#01b5ac', '#19181e', '#23252c']
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+#section0{
+  background-image: url('./images/background_top.svg');
+  background-size: cover;
+background-position: center;
+}
+/* .top_guy_image img{
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+  height: 580px;
+} */
+
+
+.top_guy_image img{
+  position: absolute;
+  height: 580px;
+  top: -205px;
+}
+
+#section0 .quote{
+  font-size: 2.5rem;
+  width: 350px;
+  color: white;
+  z-index: 9
+}
+
+#section0 .quote blockquote{
+  z-index: 9;
+  position:relative;
+}
+#section0 .quote span{
+  z-index: 9;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-left: 0.5rem;
+  display: block;
+}
+
+
+#section0 .quote i{
+  position: absolute;
+  color: #00000054;
+  left:20px;
+  font-size: 2.9rem;
+  z-index: 8;
+}
+
+#section0 .title_guy{
+  width: 100%;
+  text-align: right;
+}
+
+#section0 .title_guy .name{
+  margin-bottom: 0;
+  font-size: 5rem;
+  margin-left: 10px;
+  color: #2B2C34;
+}
+
+#section0 .title_guy .last_name{
+  margin-top: -16px;
+  font-size: 6rem;
+  color: #2B2C34;
+}
+
+#section0 .title_guy .job{
+  font-size: 2rem;
+  color: #8B8DA0;
+}
