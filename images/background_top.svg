@@ -4,7 +4,7 @@
     <title>Desktop HD</title>
     <desc>Created with Sketch.</desc>
     <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FDFDFF" x="0" y="0" width="1440" height="850"></rect>
+        <rect fill="transparent" x="0" y="0" width="1440" height="850"></rect>
         <path d="M-619.540413,-95.8468401 L1060.19853,-95.8468401 L1060.19853,560.933716 C945.828288,560.933716 721.067213,560.933716 385.915306,560.933716 C50.7634,560.933716 -284.388507,560.933716 -619.540413,560.933716 L-619.540413,-95.8468401 Z" id="pat" fill="#615FFA" transform="translate(220.329059, 232.543438) rotate(-60.000000) translate(-220.329059, -232.543438) "></path>
     </g>
 </svg>
