@@ -201,21 +201,23 @@ Handlebars.registerHelper('limitDescription', function(text,options) {
   return subText;
 });
 $(document).ready(()=>{
-	$.ajax({
-		url:'https://api.github.com/users/andreperegrina/repos',
-		data:{
-			per_page:'3',
-			sort:'created'
-		},
-		success:(response)=>{
-			var source   = document.getElementById("github-card-template").innerHTML;
-			var template = Handlebars.compile(source);
-			$('#github-cards').html(template({github_repos:response}));
-		}
-	});
+	$.when(
+    $.ajax('https://api.github.com/repos/andreperegrina/open-hours'),
+    $.ajax('https://api.github.com/repos/andreperegrina/core-mvc-boilerplate-api'),
+    $.ajax('https://api.github.com/repos/andreperegrina/grails-spring-security-oauth2-outlook')
+    )
+    .done(function(first_call, second_call, third_call){
+				var source   = document.getElementById("github-card-template").innerHTML;
+				var template = Handlebars.compile(source);
+				$('#github-cards').html(template({github_repos:[first_call[0],second_call[0],third_call[0]]}));
+    })
+    .fail(function(){
+
+    });
 });
  var $body=$('body');
 	var myFullpage = new fullpage('#fullpage', {
+		licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
 		sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent', 'transparent'],
 		onLeave: function(origin, destination, direction){
 			var leavingSection = this;
