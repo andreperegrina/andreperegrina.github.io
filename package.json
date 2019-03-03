@@ -1,0 +1,26 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "next build",
+    "export": "next export",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.13",
+    "@zeit/next-sass": "^1.0.1",
+    "express": "^4.15.2",
+    "next": "^8.0.3",
+    "next-images": "^1.0.4",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-typed": "^1.1.0"
+  }
+}
